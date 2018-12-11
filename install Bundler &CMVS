@@ -11,3 +11,16 @@ make
 参考https://github.com/snavely/bundler_sfm/issues/58
 sudo apt install gfortran
 没有解决
+~/cmvs/bundler-v0.4-source$ gfortran --versionGNU Fortran (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
+Copyright (C) 2017 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+~/cmvs/bundler-v0.4-source$ gcc --version
+gcc (Ubuntu 6.4.0-17ubuntu1) 6.4.0 20180424
+Copyright (C) 2017 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+sudo apt-get update
+
