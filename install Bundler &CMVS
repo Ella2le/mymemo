@@ -1,0 +1,13 @@
+Ubuntu 18.04下安装Bunlder和PMVS(CMVS)
+参考：Ubuntu 16.04下安装Bunlder和PMVS(CMVS)https://www.jianshu.com/p/ef3ef6fdf354
+
+1.安装bundler
+下载bundler-v0.4-source.tar.gz
+extract 
+cd bundler-v0.4-source
+make
+
+出现问题：error trying to exec 'f951': execvp: No such file or directory
+参考https://github.com/snavely/bundler_sfm/issues/58
+sudo apt install gfortran
+没有解决
