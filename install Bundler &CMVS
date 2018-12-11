@@ -24,3 +24,18 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 sudo apt-get update
 
+ 参考http://www.voidcn.com/article/p-pfnlidhu-bra.html
+ 安装依赖
+为了编译和运行Bundler，我们需要安装如下依赖
+sudo apt-get install liblapack-dev libblas-dev minpack-dev f2c gfortran jhead imagemagick
+接下来继续安装SIFT依赖
+sudo apt-get install libc6-dev-i386
+安装CMVS-PMVS依赖
+sudo apt-get install libgtk2.0-dev libdevil-dev libboost-all-dev libatlas-cpp-0.6-dev libatlas-dev libcminpack-dev libgfortran3 libmetis-edf-dev libparmetis-dev freeglut3-dev libgsl0-dev
+
+https://software.intel.com/en-us/forums/intel-fortran-compiler-for-linux-and-mac-os-x/topic/270724
+You are probably using a makefile which thinks that the default compiler for Fortran should be a GNU compiler.
+Run Make from the IFort environment, or try to build a simple Fortran program without using Make from the same environment.
+
+You don't need a gfortran installation to use ifort. If you ask gcc (which you do need) to compile a Fortran source file, it will look for gfortran.
+The ifort installation doesn't change anything in the gcc installation. As already mentioned, you would use ifort command (with ifort environment variables set) to start the ifort compiler.
